@@ -1,0 +1,27 @@
+#! /usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+
+require_once dirname(__FILE__).'/resources/aws/S3.php';
+
+try {
+    if (! isset($argv[1])) {
+        throw new Exception('アップロード対象を引数に指定してください');
+    }
+
+
+    $path = $argv[1];
+    $path = preg_replace('/^\./', '', $path);
+    if (! preg_match('/^\//', $path)) {
+        $path = '/'.$path;
+    }
+    
+
+    $s3 = new S3();
+    $s3->upload(dirname(__FILE__).$path);
+
+} catch (\Exception $e) {
+    throw $e;
+}

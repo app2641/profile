@@ -1,0 +1,35 @@
+#! /usr/bin/env php
+<?php
+
+try {
+    if (! isset($argv[1])) {
+        throw new Exception('slimでhtmlをコンパイルします。 e.g. ./compile ./demo/foo.html');
+    }
+
+
+    $path = explode('/', $argv[1]);
+    $file = str_replace('.html', '', $path[count($path) - 1]);
+
+    $html = preg_replace('/^\./', '', $argv[1]);
+    if (! preg_match('/^\//', $html)) {
+        $html = '/'.$html;
+    }
+
+    // slimの有無
+    if (! file_exists(dirname(__FILE__).'/resources/slim/'.$file.'.slim')) {
+        throw new Exception('slimファイルが見つかりません');
+    }
+
+
+    $command = sprintf(
+        'slimrb %s > %s',
+        dirname(__FILE__).'/resources/slim/'.$file.'.slim',
+        dirname(__FILE__).$html
+    );
+    passthru($command);
+    
+
+} catch (Exception $e) {
+    throw $e;
+}
+
