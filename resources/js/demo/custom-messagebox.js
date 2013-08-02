@@ -22,7 +22,7 @@ Ext.application({
                 layout: 'hbox',
                 defaults: {
                     xtype: 'textfield',
-                    labelWidth: 50,
+                    labelWidth: 90,
                     margin: '0 50 0 0',
                     width: 250,
                     listeners: {
@@ -37,16 +37,16 @@ Ext.application({
                 },
                 items: [{
                     name: 'btn1',
-                    fieldLabel: 'ボタン1',
+                    fieldLabel: 'OKボタン',
                     allowBlank: false,
                     value: 'OK'
                 }, {
                     name: 'btn2',
-                    fieldLabel: 'ボタン2',
+                    fieldLabel: 'YESボタン',
                     value: 'YES'
                 }, {
                     name: 'btn3',
-                    fieldLabel: 'ボタン3',
+                    fieldLabel: 'CANCELボタン',
                     value: 'CANCEL'
                 }]
             }],
