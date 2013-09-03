@@ -2,7 +2,20 @@ doctype html
 html itemscope="itemscope" itemtype="http://data-vocabulary.org/Person" lang="ja"
     head
         meta content="utf-8"
-        meta content="app2641のプロフィールだよ！" name="description"
+
+        meta property="og:title" content="app2641.com"
+        meta property="og:type" content="website"
+        meta property="og:url" content="http://app2641.com"
+        meta property="og:image" content="http://app2641.com/resources/images/profile.png"
+        meta property="og:site_name" content="app2641.com"
+        meta property="og:description" content="app2641さんのプロフィールだよ！"
+
+        meta name="twitter:site" content="@app2641"
+        meta name="keywords" content="app2641 プロフィール twitter github はてなブログ tumblr"
+
+        link rel="author" href="https://plus.google.com/107799956847403953714"
+        meta name="description" content="app2641さんのプロフィールだよ！"
+
 
         link href="/resources/css/reset.css" media="screen" rel="stylesheet" type="text/css"
         link href="/resources/css/main.css" media="screen" rel="stylesheet" type="text/css"
@@ -13,20 +26,21 @@ html itemscope="itemscope" itemtype="http://data-vocabulary.org/Person" lang="ja
 
     body
         div#container
-            img.profile_img src="/resources/images/profile.png"
+            img.profile_img src="/resources/images/profile.png" itempop="image"
 
-            h1.name app2641
+            h1.name itempop="name"
+                | app2641
 
             div.products
                 p
-                    a href="https://twitter.com/app2641" target="_blank" twitter.com
+                    a href="https://twitter.com/app2641" target="_blank" itempop="url" twitter.com
 
                 p
-                    a href="https://github.com/app2641" target="_blank" github.com
+                    a href="https://github.com/app2641" target="_blank" itempop="url" github.com
 
                 p
-                    a href="http://app2641.hatenablog.com" target="_blank" hatenablog.com
+                    a href="http://app2641.hatenablog.com" target="_blank" itempop="url" hatenablog.com
 
                 p
-                    a href="http://app2641.tumblr.com" target="_blank" tumblr.com
+                    a href="http://app2641.tumblr.com" target="_blank" itempop="url" tumblr.com
 
