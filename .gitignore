@@ -1,2 +1,6 @@
 .DS_Store
-resources/aws/config.ini
+
+public_html/resources/aws/config.ini
+
+vendor/*
+

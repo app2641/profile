@@ -1,0 +1,51 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "8779b1582bd2b73818467e9c9206e7c1",
+    "packages": [
+        {
+            "name": "app2641/emerald-beans",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/app2641/emerald-beans.git",
+                "reference": "6924b875dee51bccacdc65f752f19aada54091f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/app2641/emerald-beans/zipball/6924b875dee51bccacdc65f752f19aada54091f0",
+                "reference": "6924b875dee51bccacdc65f752f19aada54091f0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Emerald": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-05-21 02:38:23"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
