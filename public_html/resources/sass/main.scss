@@ -1,0 +1,33 @@
+
+@import 'modules/fonts';
+
+
+html, body {
+    height: 100%;
+
+    padding:10px;
+    margin:0px;
+}
+
+body {
+    min-height: 100%;
+
+    background-image: url('/resources/images/wall.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    /* css3 */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+@import 'modules/left-panel';
+@import 'modules/profile';
+
+@import 'modules/right-panel';
+@import 'modules/products';
+

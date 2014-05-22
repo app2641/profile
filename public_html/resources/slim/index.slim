@@ -2,7 +2,7 @@ doctype html
 html itemscope="itemscope" itemtype="http://data-vocabulary.org/Person" lang="ja"
     head
         meta content="utf-8"
-        meta name="viewport" content="width=device-width, initial-scale=1"
+        meta name="viewport" content="width=device-width, initial-scale=1.0"
 
         meta property="og:title" content="app2641.com"
         meta property="og:type" content="website"
@@ -20,6 +20,7 @@ html itemscope="itemscope" itemtype="http://data-vocabulary.org/Person" lang="ja
 
         link href="/resources/css/reset.css" media="screen" rel="stylesheet" type="text/css"
         link href="/resources/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"
+        link href="/resources/css/main.css" rel="stylesheet" type="text/css"
 
         link rel="shortcut icon" type="image/x-icon" href="/resources/favicon.ico"
 
@@ -27,21 +28,33 @@ html itemscope="itemscope" itemtype="http://data-vocabulary.org/Person" lang="ja
 
     body
         div#container
-            img.profile_img src="/resources/images/profile.png" itempop="image"
+            div.row
+                div.col-md-3 id="left-panel"
+                  img.profile_img.img-circle src="/resources/images/profile.png" itempop="image"
 
-            h1.name itempop="name"
-                | app2641
+                    h1.name.g-font-mailtonian itempop="name"
+                        | app2641
 
-            div.products
-                p
-                    a href="https://twitter.com/app2641" target="_blank" itempop="url" twitter.com
 
-                p
-                    a href="https://github.com/app2641" target="_blank" itempop="url" github.com
+                div.col-md-9 id="right-panel"
+                    div.products
+                        div.product
+                            p
+                                img.favicon-img src="http://www.google.com/s2/favicons?domain=twitter.com"
+                                a.g-font-shadowburst href="https://twitter.com/app2641" target="_blank" itempop="url" twitter.com
 
-                p
-                    a href="http://app2641.hatenablog.com" target="_blank" itempop="url" hatenablog.com
+                        div.product
+                            p
+                                img.favicon-img src="http://www.google.com/s2/favicons?domain=github.com"
+                                a.g-font-shadowburst href="https://github.com/app2641" target="_blank" itempop="url" github.com
 
-                p
-                    a href="http://app2641.tumblr.com" target="_blank" itempop="url" tumblr.com
+                        div.product
+                            p
+                                img.favicon-img src="/resources/images/icons/hatenablog.png"
+                                a.g-font-shadowburst href="http://app2641.hatenablog.com" target="_blank" itempop="url" hatenablog.com
+
+                        div.product
+                            p
+                                img.favicon-img src="http://www.google.com/s2/favicons?domain=tumblr.com"
+                                a.g-font-shadowburst href="http://app2641.tumblr.com" target="_blank" itempop="url" tumblr.com
 

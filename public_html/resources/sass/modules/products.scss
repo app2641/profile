@@ -1,0 +1,25 @@
+
+div.products {
+    margin-top: 5%;
+}
+
+div.products p {
+    margin-bottom: 15px;
+}
+
+div.products a {
+    font-size: 1.4em;
+    vertical-align: middle;
+
+    text-decoration: none;
+    color: #eee;
+}
+
+div.products a:hover {
+    text-decoration: underline;
+}
+
+div.product img.favicon-img {
+    width: 16px;
+    margin: 10px;
+}
