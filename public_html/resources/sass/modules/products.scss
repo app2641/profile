@@ -1,13 +1,24 @@
 
 div.products {
-    margin-top: 5%;
+    margin: 40px;
 }
 
-div.products p {
+
+div.product {
+    margin: 30px;
+    padding: 20px 50px;
+    background-color: hsla(200, 100%, 100%, 0.25);
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+div.product p {
     margin-bottom: 15px;
 }
 
-div.products a {
+div.product p a {
     font-size: 1.4em;
     vertical-align: middle;
 
@@ -15,7 +26,7 @@ div.products a {
     color: #eee;
 }
 
-div.products a:hover {
+div.product a:hover {
     text-decoration: underline;
 }
 
