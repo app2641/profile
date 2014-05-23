@@ -1,5 +1,6 @@
 {
     "require": {
-        "app2641/emerald-beans": "*"
+        "app2641/emerald-beans": "*",
+        "aws/aws-sdk-php": "*"
     }
 }

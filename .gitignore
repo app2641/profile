@@ -1,5 +1,8 @@
 .DS_Store
 
+
+config/aws.ini
+
 public_html/resources/aws/config.ini
 public_html/resources/sass/.sass-cache/*
 

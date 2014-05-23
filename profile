@@ -2,7 +2,7 @@
 <?php
 
 $loader = require_once __DIR__.'/vendor/autoload.php';
-$loader->set('App', __DIR__.'/library');
+$loader->set('Profile', __DIR__.'/library');
 
 
 use Emerald\CLI;
