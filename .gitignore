@@ -1,2 +1,10 @@
 .DS_Store
-resources/aws/config.ini
+
+
+config/aws.ini
+
+public_html/resources/aws/config.ini
+public_html/resources/sass/.sass-cache/*
+
+vendor/*
+

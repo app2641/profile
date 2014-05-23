@@ -1,0 +1,36 @@
+
+div.products {
+    margin: 40px;
+}
+
+
+div.product {
+    margin: 30px;
+    padding: 20px 50px;
+    background-color: hsla(200, 100%, 100%, 0.1);
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+div.product p {
+    margin-bottom: 15px;
+}
+
+div.product p a {
+    font-size: 1.4em;
+    vertical-align: middle;
+
+    text-decoration: none;
+    color: #eee;
+}
+
+div.product a:hover {
+    text-decoration: underline;
+}
+
+div.product img.favicon-img {
+    width: 16px;
+    margin: 10px;
+}
