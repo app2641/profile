@@ -18,3 +18,25 @@ body {
     box-shadow: 0px 1px 4px rgb(187, 187, 187);
 }
 
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    z-index: -1;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    /* css3 */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
