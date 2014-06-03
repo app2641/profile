@@ -1,18 +1,8 @@
 
-@import 'modules/fonts';
-
-
-html, body {
-    height: 100%;
-
-    margin: 0px;
-    padding: 0px;
-}
+@import 'modules/common';
 
 
 body {
-    min-height: 100%;
-
     background-image: url('/resources/images/itc_wall.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -27,7 +17,7 @@ body {
 
 
 div#header {
-    position: fixed;
+    position: static;
     top: 20px;
     left: 20px;
 }
@@ -47,8 +37,27 @@ h1#service_name {
     padding: 20px;
 }
 
+p.service-description {
+    margin-bottom: 60px;
+}
 
-.shadow {
-    box-shadow: 0px 1px 4px rgb(187, 187, 187);
+img.service-image {
+    width: 500px;
+}
+
+button.itc-entry {
+    margin: 70px;
+}
+
+
+div#footer img {
+    width: 40px;
+    margin: 10px;
+    opacity: 0.8;
+}
+
+div#footer img:hover {
+    opacity: 1.0;
+    cursor: pointer;
 }
 

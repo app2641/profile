@@ -20,7 +20,11 @@ html itemscope="itemscope" itemtype="http://data-vocabulary.org/Person" lang="ja
 
         link href="/resources/css/reset.css" media="screen" rel="stylesheet" type="text/css"
         link href="/resources/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"
-        link href="/resources/css/product.css" rel="stylesheet" type="text/css"
+        link href="/resources/css/itc.css" rel="stylesheet" type="text/css"
+
+        script type="text/javascript" src="/resources/lib/jQuery/jquery-2.1.1.min.js"
+        script type="text/javascript" src="/resources/lib/twitter-bootstrap/js/bootstrap.min.js"
+        script type="text/javascript" src="/resources/js/product/itc.js"
 
         link rel="shortcut icon" type="image/x-icon" href="/resources/favicon.ico"
 
@@ -41,5 +45,18 @@ html itemscope="itemscope" itemtype="http://data-vocabulary.org/Person" lang="ja
                     br
                     | 早く、そして正確な情報をお届けします。
 
-                img.shadow src="/resources/images/itc_mail.png"
+                img.service-image.shadow src="/resources/images/itc_mail.png"
+
+                br
+
+                button type="button" class="btn btn-primary btn-lg itc-entry" title="ITC にエントリーする"
+                    | ITC にエントリーする
+
+
+        div#footer
+            div.text-center
+                a href="/"
+                    img.shadow.img-circle src="/resources/images/profile.png" itempop="image"
+                p
+                    | Copyright, app2641
 

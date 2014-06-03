@@ -1,17 +1,8 @@
 
-@import 'modules/fonts';
+@import 'modules/common';
 
-
-html, body {
-    height: 100%;
-
-    padding:10px;
-    margin:0px;
-}
 
 body {
-    min-height: 100%;
-
     background-image: url('/resources/images/wall.jpg');
     background-repeat: no-repeat;
     background-position: center center;
