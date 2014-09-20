@@ -29,11 +29,20 @@ body {
     max-height: 100%;
     z-index: -1;
 
+    // 画像をタイル状に繰り返し表示しない
     background-repeat: no-repeat;
+
+    // 画像を常に天地左右の中央に配置
     background-position: center center;
+
+    // コンテンツの高さが画像の高さより大きい時、動かないように固定
     background-attachment: fixed;
 
-    /* css3 */
+    // 背景画像が読み込まれる前に表示される背景のカラー
+    background-color: #464646;
+
+    // css3
+    // 表示するコンテナの大きさに基づいて、背景画像を調整
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
