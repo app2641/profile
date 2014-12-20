@@ -1,21 +1,19 @@
 
 div.products {
     margin: 40px;
+    margin-top: 60px;
+    font-size: 1.2em;
 }
 
 
 div.product {
     margin: 30px;
-    padding: 20px 50px;
-    background-color: hsla(200, 100%, 100%, 0.1);
-
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    padding: 10px 50px;
 }
 
 div.product p {
-    margin-bottom: 15px;
+    margin: 0px;
+    //margin-bottom: 15px;
 }
 
 div.product p a {
@@ -31,6 +29,13 @@ div.product a:hover {
 }
 
 div.product img.favicon-img {
-    width: 16px;
+    width: 20px;
     margin: 10px;
 }
+
+div.product p.description {
+    font-size: 0.8em;
+    margin-top: 5px;
+    color: #;
+}
+

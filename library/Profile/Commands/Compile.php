@@ -116,9 +116,7 @@ class Compile extends AbstractCommand implements CommandInterface
             ROOT.'/'.$this->compile_dir.'/'.$this->html_file
         );
 
-        touch ('/tmp/profile.query');
-        file_put_contents('/tmp/profile.query', $command);
-        exec('cat /tmp/profile.query | pbcopy');
+        passthru($command);
     }
 
 
